@@ -1,0 +1,253 @@
+/* Genel stil ayarları */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navigasyon */
+nav {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+.navigation-items {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px 0;
+}
+
+.navigation-item {
+  margin: 0 20px;
+}
+
+.navigation-item a {
+  color: #ecf0f1;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.navigation-item a:hover {
+  color: #3498db;
+}
+
+/* About Me Section */
+#about-me {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-me-text-container {
+  width: 60%;
+}
+
+.about-me-text-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.about-me-text-container p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+#time-container {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #3498db;
+}
+
+.portrait {
+  width: 35%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  border: 5px solid #ecf0f1;
+}
+
+/* Projects Section */
+/* Projeler Bölümü */
+#projects {
+  background-color: #ecf0f1;
+  padding: 60px 0;
+}
+
+#projects h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.project {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #3498db;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.project-title:hover {
+  color: #2980b9;
+}
+
+.project-description {
+  font-size: 1.1rem;
+  margin-top: 20px;
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+.project-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/* Skills Section */
+#skills {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+#skills h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+#skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#skills-container i {
+  font-size: 3rem;
+  margin: 15px;
+  color: #3498db;
+  transition: color 0.3s;
+}
+
+#skills-container i:hover {
+  color: #2980b9;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+footer .heart {
+  color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-me-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .portrait {
+    width: 70%;
+    margin-top: 20px;
+  }
+
+  #skills-container {
+    justify-content: space-evenly;
+  }
+
+  .project {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 10px 0;
+  }
+
+  .navigation-items {
+    flex-direction: column;
+  }
+
+  .navigation-item {
+    margin: 10px 0;
+  }
+
+  .about-me-text-container h2 {
+    font-size: 2rem;
+  }
+
+  .portrait {
+    width: 80%;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
